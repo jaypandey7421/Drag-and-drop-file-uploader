@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  background-color: #252827;
+  color: #FFFEE6;
+}
+
+main{
+  padding: 20px;
+}
+h1{
+  text-align: center;
+}
+
+.drop-area{
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px dashed rgba(255, 254, 230, 0.507);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.drop-area h3{
+  font-size: 2rem;
+  color: rgba(240, 248, 255, 0.938);
+}
+.drop-area h4{
+  font-size: 1rem;
+  color: rgb(24, 27, 27);
+  color: rgba(240, 248, 255, 0.568);
+  padding: 8px 20px ;
+}
+.drop-area p{
+  margin: 1rem auto;
+}
+.drag-over{
+  background-color: rgba(240, 248, 255, 0.466);
+}
+.preview-container{
+  text-align: center;
+}
+.gallery{
+  display: flex;
+  gap: 8px;
+}
+.image-box{
+  flex: 1 1 150px;
+  border: 2px solid #FFFEE6;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.image-box img{
+  object-fit: cover;
+  width: 100%;
+}
