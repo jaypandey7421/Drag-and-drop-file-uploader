@@ -29,6 +29,13 @@ export default function App(){
     }
   }
 
+  const handleSelection = ()=>{
+    if(fileRef.current && fileRef.current.files){
+      const files = fileRef.current.files;
+      handleFiles(files);
+    }
+  }
+
   const handleFiles = (files: FileList)=>{
     // get valid images
     let validImgs = [...files].filter((file)=>
@@ -47,13 +54,6 @@ export default function App(){
         }
 
       }
-  }
-
-  const handleSelection = ()=>{
-    if(fileRef.current && fileRef.current.files){
-      const files = fileRef.current.files;
-      handleFiles(files);
-    }
   }
 
   return(

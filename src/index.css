@@ -53,9 +53,11 @@ h1{
 .gallery{
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .image-box{
-  flex: 1 1 150px;
+  flex: 1 1 100px;
   border: 2px solid #FFFEE6;
   border-radius: 3px;
   overflow: hidden;
